@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/cv"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardBackgroundColor="#fefefe"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/rel_item_history_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgBg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            card_view:srcCompat="@drawable/roombook" />
+
+        <TextView
+            android:id="@+id/tv_kode_kamar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/poppinssemi"
+            android:text="Kode"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_type_kamar_list_kamar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgBg"
+            android:fontFamily="@font/poppins"
+            android:text="Tipe Kamar"
+            android:textColor="#000"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv_checkin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_type_kamar_list_kamar"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imgBg"
+            android:fontFamily="@font/poppinssemi"
+            android:text="Cekin"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_checkin"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/imgBg"
+            android:fontFamily="@font/poppinssemi"
+            android:text="Cekout"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_harga_history_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_checkin"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppinssemi"
+            android:text="Harga"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_below="@id/tv_type_kamar_list_kamar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imgBg"
+            card_view:srcCompat="@drawable/cekinnew" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_below="@id/imageView2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imgBg"
+            card_view:srcCompat="@drawable/cekoutnew" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
