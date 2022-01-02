@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgbooking"
+
+    tools:context=".BookingActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/textJudul"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Booking Room"
+        android:fontFamily="@font/poppins"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/textJudul"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/textdeskripsi"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Booking Room sesuai keinginan anda jangan salah pilih!"
+        android:fontFamily="@font/montserratthin"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/et_kode_kamar"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/textJudul"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/radius_formwhiteblur"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Kode Kamar"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/buttonKode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textJudul"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@id/et_kode_kamar"
+        android:background="@drawable/radius_button"
+        android:fontFamily="@font/poppins"
+        android:text="Kode"
+        android:textColor="@color/white" />
+
+
+    <Spinner
+        android:id="@+id/spin_kamar"
+        style="?attr/spinnerDropDownItemStyle"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/et_kode_kamar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/radius_formwhiteblur"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textSize="15dp" />
+
+    <ImageButton
+        android:id="@+id/Arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@id/et_kode_kamar"
+        android:background="#fff"
+        android:layout_toRightOf="@id/spin_kamar"
+        android:src="@drawable/arrow" />
+
+    <EditText
+        android:id="@+id/et_harga_permalam"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/spin_kamar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/radius_formwhiteblur"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Harga Per Malam"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/et_tgl_checkin"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/et_harga_permalam"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/radius_formwhiteblur"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Cekin"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/et_tgl_checkout"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/et_tgl_checkin"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/radius_formwhiteblur"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Cekout"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/bt_booking"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/et_tgl_checkout"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/radius_button"
+        android:fontFamily="@font/poppins"
+        android:text="Input Booking"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <ImageButton
+        android:id="@+id/ibt_tgl_checkin"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/et_harga_permalam"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/et_tgl_checkin"
+        android:background="@drawable/radius_button"
+        android:elevation="5dp"
+        android:src="@drawable/calender" />
+
+    <ImageButton
+        android:id="@+id/ibt_tgl_checkout"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/ibt_tgl_checkin"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/et_tgl_checkout"
+        android:background="@drawable/radius_button"
+        android:elevation="5dp"
+        android:src="@drawable/calender" />
+
+
+</RelativeLayout>
